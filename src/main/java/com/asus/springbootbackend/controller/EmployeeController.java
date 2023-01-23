@@ -50,6 +50,7 @@ public class EmployeeController {
         return ResponseEntity.ok(updateEmployee);
     }
 
+    //added functionality to delete employee
     @DeleteMapping
     public void deleteAllEmployees(){
         employeeRepository.deleteAll();
