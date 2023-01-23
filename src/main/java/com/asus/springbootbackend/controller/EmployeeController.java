@@ -50,8 +50,9 @@ public class EmployeeController {
         return ResponseEntity.ok(updateEmployee);
     }
 
-//    public ResponseEntity<Employee> deleteEmployee(@PathVariable long id, @RequestBody Employee employee) {
-//        Employee
-//    }
+    @DeleteMapping
+    public void deleteAllEmployees(){
+        employeeRepository.deleteAll();
+    }
 
 }
