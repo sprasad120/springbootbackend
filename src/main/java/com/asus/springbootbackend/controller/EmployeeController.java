@@ -55,5 +55,6 @@ public class EmployeeController {
     public void deleteAllEmployees(){
         employeeRepository.deleteAll();
     }
+    //todo add functionality for updating employee
 
 }
